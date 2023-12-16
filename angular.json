@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular": {
+    "proyectoAngular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/angular",
+            "outputPath": "dist/proyecto-angular",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -25,9 +25,23 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/lib/animate/animate.css",
+              "src/assets/lib/owlcarousel/assets/owl.carousel.css",
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/style.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "src/assets/lib/wow/wow.min.js",
+              "src/assets/lib/easing/easing.min.js",
+              "src/assets/lib/waypoints/waypoints.min.js",
+              "src/assets/lib/owlcarousel/owl.carousel.min.js",
+              "src/assets/js/main.js"
+            ]
+
           },
           "configurations": {
             "production": {
@@ -57,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular:build:production"
+              "buildTarget": "proyectoAngular:build:production"
             },
             "development": {
-              "buildTarget": "angular:build:development"
+              "buildTarget": "proyectoAngular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -68,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "angular:build"
+            "buildTarget": "proyectoAngular:build"
           }
         },
         "test": {
