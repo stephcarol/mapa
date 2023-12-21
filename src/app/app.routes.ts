@@ -7,5 +7,5 @@ export const routes: Routes = [
     { path: '', component: IndexComponent },
     { path: 'about', component: AboutComponent },
     { path: 'contact', component: ContactComponent },
-    /*{ path: '**', redirecTo: ''}*/
+     { path: '**', redirectTo: ''}
 ];
