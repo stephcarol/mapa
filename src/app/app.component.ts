@@ -14,7 +14,7 @@ import { ServicioProyectoService } from './providers/servicio-proyecto.service';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, NavbarComponent, FooterComponent,HttpClientModule],
+  imports: [CommonModule, RouterOutlet, NavbarComponent, FooterComponent,IndexComponent, HttpClientModule],
   providers: [ServicioProyectoService],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
