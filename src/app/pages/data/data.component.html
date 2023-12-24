@@ -20,22 +20,24 @@
                     <div class="col-xl-10 col-lg-12">
                         <div class="row g-4">
                             <div class="col-md-6 col-xl-3">
-                                <select class="form-select p-3 border-0">
-                                    <option value="Type Of Service" class="">Type Of Service</option>
-                                    <option value="Pest Control-2">Ascendente</option>
-                                    <option value="Pest Control-3">Descendente</option>                                    
+                                <select (change)="onSelectChange($event)" class="form-select p-3 border-0">
+                                    <option value="Type Of Service" class="">Cantidad de cantantes</option>
+                                    <option value="uno">1</option>
+                                    <option value="dos">2</option> 
+                                    <option value="tres">3 o mas</option>                                    
                                 </select>
                             </div>
-                            <div class="col-md-6 col-xl-3">
+                            <!--<div class="col-md-6 col-xl-3">
                                 <input type="text" class="form-control p-3 border-0" placeholder="Nombre de la Cancion">
-                            </div>
-                            <div class="col-md-6 col-xl-3">
-                                <input type="text" class="form-control p-3 border-0" placeholder="Nombre del Artista">
-                            </div>
+                            </div>-->
+                            <!--<div class="col-md-6 col-xl-3">
+                                <input  type="number" class="form-control p-3 border-0" placeholder="Cantidad de cantantes">
+                            </div>-->
                         </div>
                     </div>
                     <div class="col-xl-2 col-lg-12">
-                        <input type="button" class="btn btn-primary w-100 p-3 border-0" value="GET STARTED">
+                        <input (click)="pruebita()" type="button" class="btn btn-primary w-100 p-3 border-0" value="FILTRAR">
+                        <!--<button (click)="filtrar()">Filtrar</button>-->
                     </div>
                 </div>
             </form>
@@ -55,7 +57,7 @@
         </tr>
      </thead>
      <tbody>
-        @for (datum of data; track datum) {
+        @for (datum of dataFil; track datum) {
            <tr>
               <td> {{ datum["track_name"] }} </td>
               <td> {{ datum["artist(s)_name"] }} </td>
