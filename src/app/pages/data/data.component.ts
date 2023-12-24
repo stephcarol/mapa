@@ -63,7 +63,7 @@ export class DataComponent {
           // Filtra los elementos vacíos después de dividir
           const cantantesFiltrados = cantantesArray.filter(cantante => cantante.trim() !== '');
         
-          // Verifica si solo hay un cantante
+          // Verifica si solo hay dos cantantes
             return cantantesFiltrados.length === 2;
         });
       } else if (this.valorSeleccionado === 'tres'){
@@ -74,7 +74,7 @@ export class DataComponent {
           // Filtra los elementos vacíos después de dividir
           const cantantesFiltrados = cantantesArray.filter(cantante => cantante.trim() !== '');
         
-          // Verifica si solo hay un cantante
+          // Verifica si hay mas de 3 cantantes
             return cantantesFiltrados.length >=3;
         });
       } else{
