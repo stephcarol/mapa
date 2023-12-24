@@ -1,0 +1,32 @@
+/* styles.css */
+
+/* Estilos para la tabla */
+.datastyle table {
+    width: 100%;
+    max-width: 100%; /* Ancho máximo de la tabla */
+    border-collapse: collapse;
+    margin-top: 10px;
+    overflow-x: auto; /* Añadir barra de desplazamiento horizontal si es necesario */
+}
+
+/* Estilos para las celdas de la tabla */
+.datastyle td, .datastyle th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Estilos para la fila de encabezado */
+.datastyle th {
+    background-color: #ffc107;
+}
+
+/* Estilos para el mensaje cuando no hay datos */
+.datastyle .text-center {
+    text-align: center;
+}
+
+/*fondo de la tabla*/
+.datastyle table {
+    background-color: white; /* Amarillo */
+}

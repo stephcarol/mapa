@@ -1,18 +1,80 @@
+<!-- index.html -->
 
-<!-- Tabla con datos -->
-<table>
-    <tbody>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="datastyle.css"> <!-- Enlace a la hoja de estilos externa -->
+    <title>Tu Página</title>
+</head>
+  <!-- Get In Touch Start -->
+  <div class="container-fluid py-5 wow fadeInUp" data-wow-delay=".3s">
+    <div class="container py-5">
+        <div class="bg-light px-4 py-5 rounded">
+            <div class="text-center">
+                <h1 class="display-5 mb-5">Filtros</h1>
+            </div>
+            <form class="text-center mb-4" action="#">
+                <div class="row g-4">
+                    <div class="col-xl-10 col-lg-12">
+                        <div class="row g-4">
+                            <div class="col-md-6 col-xl-3">
+                                <select class="form-select p-3 border-0">
+                                    <option value="Type Of Service" class="">Type Of Service</option>
+                                    <option value="Pest Control-2">Ascendente</option>
+                                    <option value="Pest Control-3">Descendente</option>                                    
+                                </select>
+                            </div>
+                            <div class="col-md-6 col-xl-3">
+                                <input type="text" class="form-control p-3 border-0" placeholder="Nombre de la Cancion">
+                            </div>
+                            <div class="col-md-6 col-xl-3">
+                                <input type="text" class="form-control p-3 border-0" placeholder="Nombre del Artista">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-12">
+                        <input type="button" class="btn btn-primary w-100 p-3 border-0" value="GET STARTED">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+  </div>
+<body>
+    <!-- Contenido de tu página -->
+<div class="datastyle">
+  <h1>DATA</h1>
+  <table id="miTabla">
+     <thead>
+        <tr>
+           <th>Nombre de la Canción</th>
+           <th>Nombre del Artista</th>
+           <th>En Listas de Spotify</th>
+        </tr>
+     </thead>
+     <tbody>
         @for (datum of data; track datum) {
-          <tr>
-            <td> {{  datum[ "track_name" ]  }}  </td>
-            <td> {{  datum[ "artist(s)_name" ]  }}  </td>
-            <td> {{  datum[ "in_spotify_playlists"]  }} </td>
-          </tr>
+           <tr>
+              <td> {{ datum["track_name"] }} </td>
+              <td> {{ datum["artist(s)_name"] }} </td>
+              <td> {{ datum["in_spotify_playlists"] }} </td>
+           </tr>
         } @empty {
-          <tr>
-            <td colspan="4" class="text-center">Aún no hay datos</td>
-          </tr>
+           <tr>
+              <td colspan="3" class="text-center">Aún no hay datos</td>
+           </tr>
         }
-    </tbody>
-</table>
+     </tbody>
+  </table>
+</div>
+
+</body>
+
+  
+
+</html>
+
+
 
