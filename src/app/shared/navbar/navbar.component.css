@@ -1,0 +1,12 @@
+#titulo{
+    color: rgb(26, 201, 10)
+}
+
+#titu{
+    display: flex;
+    gap: 5px;
+}
+
+.nav-link:hover{
+    color: rgb(26, 201, 10) !important;
+}
