@@ -5,3 +5,15 @@
 .carousel-control-next{
     background-color: rgb(53, 175, 42);
 }
+
+#carouselId .carousel-indicators li{
+    border: 2px solid rgb(53, 175, 42) !important;
+}
+
+#carouselId .carousel-indicators li.active{
+    background: rgb(53, 175, 42) !important;
+}
+
+#s1, #s2{
+    text-align: center !important;
+}

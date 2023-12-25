@@ -18,7 +18,7 @@
 
 /* Estilos para la fila de encabezado */
 .datastyle th {
-    background-color: #ffc107;
+    background-color: rgb(45 209 30 / 30%);;
 }
 
 /* Estilos para el mensaje cuando no hay datos */
@@ -29,4 +29,24 @@
 /*fondo de la tabla*/
 .datastyle table {
     background-color: white; /* Amarillo */
+}
+
+.py-5{
+    padding-top: 27px !important;
+    padding-bottom: 25px !important;
+}
+
+.selector{
+    display: flex;
+    background-color: #f5f6f6;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+.btn-primary{
+    background-color: #fdf001b0 !important;
 }

@@ -8,46 +8,41 @@
     <link rel="stylesheet" href="datastyle.css"> <!-- Enlace a la hoja de estilos externa -->
     <title>Tu Página</title>
 </head>
+ <!-- Page Header Start -->
+ <div class="container-fluid page-header py-5">
+    <div class="container text-center py-5">
+        <h1 class="display-2 text-white mb-4 animated slideInDown">¡Explora las canciones más famosas del 2023!</h1>
+        <nav aria-label="breadcrumb">
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+
+<div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
+    <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">2023</h5>
+    <h1 class="display-5">¿Está tu favorita en la lista?</h1>
+</div>
+
   <!-- Get In Touch Start -->
-  <div class="container-fluid py-5 wow fadeInUp" data-wow-delay=".3s">
-    <div class="container py-5">
-        <div class="bg-light px-4 py-5 rounded">
-            <div class="text-center">
-                <h1 class="display-5 mb-5">Filtros</h1>
-            </div>
-            <form class="text-center mb-4" action="#">
-                <div class="row g-4">
-                    <div class="col-xl-10 col-lg-12">
-                        <div class="row g-4">
+
+                        <div class="selector">
                             <div class="col-md-6 col-xl-3">
-                                <select (change)="onSelectChange($event)" class="form-select p-3 border-0">
+                                <select id="selector" (change)="onSelectChange($event)" class="form-select p-3 border-0">
                                     <option value="Type Of Service" class="">Cantidad de artistas</option>
                                     <option value="uno">1</option>
                                     <option value="dos">2</option> 
                                     <option value="tres">3 o mas</option>                                    
                                 </select>
                             </div>
-                            <!--<div class="col-md-6 col-xl-3">
-                                <input type="text" class="form-control p-3 border-0" placeholder="Nombre de la Cancion">
-                            </div>-->
-                            <!--<div class="col-md-6 col-xl-3">
-                                <input  type="number" class="form-control p-3 border-0" placeholder="Cantidad de cantantes">
-                            </div>-->
+                            <div class="col-xl-2 col-lg-12">
+                                <input (click)="pruebita()" type="button" class="btn btn-primary w-100 p-3 border-0" value="Filtrar">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-12">
-                        <input (click)="pruebita()" type="button" class="btn btn-primary w-100 p-3 border-0" value="FILTRAR">
-                        <!--<button (click)="filtrar()">Filtrar</button>-->
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-  </div>
-<body>
+
+
+  <body>
     <!-- Contenido de tu página -->
 <div class="datastyle">
-  <h1>DATA</h1>
   <table id="miTabla">
      <thead>
         <tr>
