@@ -35,7 +35,7 @@
     padding-top: 27px !important;
     padding-bottom: 25px !important;
 }
-
+/*
 .selector{
     display: flex;
     background-color: #f5f6f6;
@@ -45,6 +45,17 @@
     margin-right: 15rem;
     justify-content: space-around;
     border-radius: 20px;
+}*/
+
+.selector{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+#selector{
+    border: 1px solid #f7e823 !important;
 }
 
 .btn-primary{

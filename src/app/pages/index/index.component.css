@@ -14,6 +14,12 @@
     background: rgb(53, 175, 42) !important;
 }
 
-#s1, #s2{
+#s1{
     text-align: center !important;
+    color: black !important;
+}
+
+.py-5{
+    padding-top: 27px !important;
+    padding-bottom: 25px !important;
 }
