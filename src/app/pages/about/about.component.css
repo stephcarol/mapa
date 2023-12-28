@@ -1,0 +1,23 @@
+.page-header{
+    margin-bottom: 0rem !important;
+}
+
+.about-img::after {
+    background: rgb(53, 175, 42) !important;
+}
+
+.border-primary{
+    border-color: rgb(53, 175, 42) !important ;
+}
+
+.bg-primary{
+    background-color: rgb(53, 175, 42) !important  ;
+}
+
+.team-item:hover .team-content{
+    color: rgb(53, 175, 42) !important;
+}
+
+.btn-primary{
+    background-color: rgb(53, 175, 42) !important;
+}

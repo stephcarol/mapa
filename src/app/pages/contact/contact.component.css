@@ -1,0 +1,15 @@
+.page-header{
+    margin-bottom: 0rem !important;
+}
+
+.bg-primary{
+    background-color: rgb(53, 175, 42) !important;
+}
+
+.btn-primary{
+    background-color: rgb(53, 175, 42) !important;
+}
+
+.btn.btn-primary:hover{
+    color: rgb(53, 175, 42) !important;
+}
